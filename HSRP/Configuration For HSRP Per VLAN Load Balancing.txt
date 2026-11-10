@@ -1,0 +1,71 @@
+==================================================
+HSRP PER-VLAN LOAD BALANCING LAB
+DEVICE CONFIGURATIONS
+==================================================
+
+PROJECT:
+HSRP Per-VLAN Load Balancing & Gateway Redundancy
+
+DEVICES:
+1. GW1
+2. GW2
+3. Access Switch
+4. ISP Router
+
+==================================================
+1. GW1 CONFIGURATION
+==================================================
+
+[Paste the complete output of show running-config
+from GW1 here.]
+
+==================================================
+2. GW2 CONFIGURATION
+==================================================
+
+[Paste the complete output of show running-config
+from GW2 here.]
+
+==================================================
+3. ACCESS SWITCH CONFIGURATION
+==================================================
+
+[Paste the complete output of show running-config
+from the Access Switch here.]
+
+==================================================
+4. ISP ROUTER CONFIGURATION
+==================================================
+
+[Paste the complete output of show running-config
+from the ISP Router here.]
+
+==================================================
+5. HSRP VERIFICATION
+==================================================
+
+Run on GW1 and GW2:
+
+show standby brief
+
+Verify:
+- GW1 is Active for VLAN 10 and VLAN 20.
+- GW2 is Active for VLAN 30 and VLAN 40.
+- The opposite gateway is Standby.
+
+==================================================
+6. CONNECTIVITY TESTING
+==================================================
+
+Test the following:
+
+1. PC to default gateway connectivity.
+2. Inter-VLAN communication.
+3. Gateway-to-ISP connectivity.
+4. GW1 failure and GW2 takeover.
+5. GW2 failure and GW1 takeover.
+6. HSRP recovery after restoring failed gateway.
+
+==================================================
+END OF DOCUMENTATION
+==================================================
